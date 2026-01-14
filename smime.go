@@ -11,7 +11,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/wneessen/go-mail/internal/pkcs7"
+	"github.com/Manny404/go-mail/internal/pkcs7"
 )
 
 var (
