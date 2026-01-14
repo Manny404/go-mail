@@ -375,9 +375,9 @@ func (c *Client) Mail(from string) error {
 		if _, ok := c.ext["8BITMIME"]; ok {
 			cmdStr += " BODY=8BITMIME"
 		}
-		if _, ok := c.ext["SMTPUTF8"]; ok {
-			cmdStr += " SMTPUTF8"
-		}
+		// if _, ok := c.ext["SMTPUTF8"]; ok {
+		// 	cmdStr += " SMTPUTF8"
+		// }
 		_, ok := c.ext["DSN"]
 		if ok && c.dsnmrtype != "" {
 			cmdStr += fmt.Sprintf(" RET=%s", c.dsnmrtype)
